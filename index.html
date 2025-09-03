@@ -14,7 +14,7 @@
         class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
       >
         <h1 class="text-lg md:text-xl font-bold text-red-800">
-          Andrade & Nascimento
+          Andrade & Nascimento Advocacia
         </h1>
         <ul class="hidden md:flex gap-6 font-medium">
           <li>
@@ -49,19 +49,19 @@
 
     <!-- Cabeçalho compacto -->
     <header
-      class="pt-28 pb-12 text-center bg-gradient-to-r from-red-900 to-red-700 text-white"
+      class="pt-28 pb-12 text-center bg-gradient-to-r from-red-900 to-red-700 text-white px-6"
     >
       <h2 class="text-2xl md:text-3xl font-bold">
         Andrade & Nascimento Advocacia
       </h2>
-      <p class="mt-2 text-base md:text-lg">
+      <p class="mt-2 md:text-lg">
         Mais de 10 anos de experiência em Direito Trabalhista, Cível,
         Previdenciário e Empresarial
       </p>
     </header>
 
     <!-- Áreas de Atuação -->
-    <section id="areas" class="max-w-7xl mx-auto px-6 py-12">
+    <section id="areas" class="max-w-7xl mx-auto px-6 py-12 scroll-mt-14">
       <h3 class="text-2xl font-bold text-center text-red-800 mb-8">
         Áreas de Atuação
       </h3>
@@ -112,7 +112,7 @@
     </section>
 
     <!-- Serviços -->
-    <section id="servicos" class="bg-white py-12">
+    <section id="servicos" class="bg-white py-12 scroll-mt-16">
       <div class="max-w-7xl mx-auto px-6">
         <h3 class="text-2xl font-bold text-center text-red-800 mb-8">
           Serviços
@@ -151,48 +151,53 @@
           <div
             class="bg-gray-50 rounded-lg shadow p-5 hover:shadow-md transition flex items-center gap-2"
           >
-            <i data-lucide="contract"></i> Contratos
+            <i data-lucide="scroll-text"></i> Contratos
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="max-w-7xl mx-auto px-6 py-12">
+    <section id="contato" class="max-w-7xl mx-auto px-6 py-12 scroll-mt-16">
       <h3 class="text-2xl font-bold text-center text-red-800 mb-8">Contato</h3>
       <div class="flex flex-col md:flex-row gap-4 justify-center">
         <a
           href="https://wa.me/551123395640"
           class="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-lg font-medium shadow flex items-center gap-2"
-          ><i data-lucide="phone"></i> (11) 2339-5640</a
+          ><i data-lucide="message-circle"></i> (11) 2339-5640</a
         >
         <a
           href="https://wa.me/5511992876572"
           class="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-lg font-medium shadow flex items-center gap-2"
-          ><i data-lucide="smartphone"></i> (11) 99287-6572</a
+          ><i data-lucide="message-circle"></i> (11) 99287-6572</a
         >
         <a
           href="https://wa.me/5511974662825"
           class="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-lg font-medium shadow flex items-center gap-2"
-          ><i data-lucide="smartphone"></i> (11) 97466-2825</a
+          ><i data-lucide="message-circle"></i> (11) 97466-2825</a
         >
       </div>
-      <div class="text-center mt-6">
+      <div class="flex flex-col md:flex-row gap-4 justify-center mt-6">
         <a
           href="mailto:gilmaraandrade@hotmail.com"
-          class="block text-red-700 hover:underline flex justify-center items-center gap-1"
-          ><i data-lucide="mail"></i> gilmaraandrade@hotmail.com</a
+          class="bg-red-700 hover:bg-red-800 text-white px-5 py-3 rounded-lg font-medium shadow flex items-center gap-2 text-xs [@media(min-width:375px)]:text-base"
         >
+          <i data-lucide="mail" class="w-6 h-6"></i>
+          gilmaraandrade@hotmail.com
+        </a>
+
         <a
           href="mailto:debora.nascimento@hotmail.com"
-          class="block text-red-700 hover:underline flex justify-center items-center gap-1"
-          ><i data-lucide="mail"></i> debora.nascimento@hotmail.com</a
+          class="bg-red-700 hover:bg-red-800 text-white px-5 py-3 rounded-lg font-medium shadow flex items-center gap-2 text-xs [@media(min-width:375px)]:text-base"
         >
+          <i data-lucide="mail" class="w-6 h-6"></i>
+          debora.nascimento@hotmail.com
+        </a>
       </div>
     </section>
 
     <!-- Endereços -->
-    <section id="enderecos" class="bg-gray-100 py-12">
+    <section id="enderecos" class="bg-gray-100 py-12 scroll-mt-16">
       <div class="max-w-5xl mx-auto px-6">
         <h3 class="text-2xl font-bold text-center text-red-800 mb-8">
           Endereços
@@ -229,20 +234,74 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-red-800 text-white text-center py-5 text-sm">
+    <footer class="bg-red-800 text-white text-center py-5 px-6 text-sm">
       <p>
         &copy; 2025 Andrade & Nascimento Advocacia. Todos os direitos
         reservados.
       </p>
     </footer>
 
-    <!-- Botão flutuante WhatsApp -->
-    <a
-      href="https://wa.me/5511992876572"
-      class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-full shadow-lg text-lg flex items-center justify-center"
-    >
-      <i data-lucide="message-circle"></i>
-    </a>
+    <!-- Botão flutuante -->
+    <div class="fixed bottom-6 right-6 z-50">
+      <!-- Botão principal -->
+      <button
+        id="whatsapp-btn"
+        class="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
+      >
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Menu de números (oculto por padrão) -->
+      <div
+        id="whatsapp-menu"
+        class="hidden flex-col gap-4 mt-3 items-end relative z-50"
+      >
+        <a
+          href="https://wa.me/551123395640"
+          target="_blank"
+          class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2"
+        >
+          (11) 2339-5640
+        </a>
+        <a
+          href="https://wa.me/5511992876572"
+          target="_blank"
+          class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2 mt-1"
+        >
+          (11) 99287-6572
+        </a>
+        <a
+          href="https://wa.me/5511974662825"
+          target="_blank"
+          class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2 mt-1"
+        >
+          (11) 97466-2825
+        </a>
+      </div>
+    </div>
+
+    <!-- Overlay (oculto por padrão) -->
+    <div
+      id="overlay"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+    ></div>
+
+    <script>
+      const btn = document.getElementById("whatsapp-btn");
+      const menu = document.getElementById("whatsapp-menu");
+      const overlay = document.getElementById("overlay");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        overlay.classList.toggle("hidden");
+      });
+
+      // Fechar ao clicar no overlay
+      overlay.addEventListener("click", () => {
+        menu.classList.add("hidden");
+        overlay.classList.add("hidden");
+      });
+    </script>
 
     <script>
       lucide.createIcons();
